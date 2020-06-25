@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   const [repos,setRepos]=useState([]);
-useEffect(()=>{
+  useEffect( () => {
   async function getReposit(){
   
 
@@ -14,7 +14,7 @@ useEffect(()=>{
        setRepos(data);
   }
  
-  getReposit();
+  getReposit()
 
   //  "https"://api.github.com/users/muhammadmohsin/repos"
     // fetch('https://jsonplaceholder.typicode.com/posts/1')
@@ -23,10 +23,10 @@ useEffect(()=>{
     //   setdata(json);
   //  })
 
-   },[ ])
+  // },[])
   return (
    <div className="App">
-     <h1>All repositries</h1>
+     <h1>all repositroy</h1>
      <ul>
        {repos.map((repoObj, ind) => {
         return(<li key={ind}>{repoObj.name}
