@@ -23,7 +23,7 @@ function App() {
     //   setdata(json);
   //  })
 
-  // },[])
+  },[])
   return (
    <div className="App">
      <h1>all repositroy</h1>
